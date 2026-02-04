@@ -2,11 +2,17 @@
 name = "blog_os"
 version = "0.1.0"
 edition = "2024"
+authors = ["Asit asitptnk06@gmail.com"]
 
+# the profile used for `cargo build`
 [profile.dev]
-panic = "abort"
+panic = "abort" # disable stack unwinding on panic\
 
+# the profile used for `cargo build --release`
 [profile.release]
-panic = "abort"
+panic = "abort" # disable stack unwinding on panic
 
-[dependencies]
+[[bin]]
+name = "blog_os"
+test = false
+bench = false
