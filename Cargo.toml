@@ -16,3 +16,6 @@ panic = "abort" # disable stack unwinding on panic
 name = "blog_os"
 test = false
 bench = false
+
+[dependencies]
+bootloader = "0.9"
